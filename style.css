@@ -1,0 +1,106 @@
+html {
+    text-transform: lowercase;
+    font-family: Fira Code SemiBold, monospace;
+}
+
+/* ^^^^
+getting the necessary stuff out of the way 
+*/
+
+body {
+    display: flex;
+    background: linear-gradient(45deg, #000 9%, #353535 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border: white 1px solid;
+}
+
+h1 {
+    font-family: "Fira Code SemiBold", monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(159, 159, 159);
+	letter-spacing: 0.2ch;
+}
+
+span {
+    color: pink;
+    position: absolute;
+    left: 1.6ch;
+}
+
+@keyframes flicker {
+    0%, 19%, 22%, 62%, 64%, 70%, 100% {
+        opacity: 0.99;
+        text-shadow: 
+            -1px -1px 0 rgba(255,255,255, 0.4), 
+            1px -1px 0 rgba(255,255,255, 0.4), 
+            -1px 1px 0 rgba(255,255,255, 0.4), 
+            1px 1px 0 rgba(255,255,255, 0.4), 
+            0 -2px 8px,
+            0 0 2px,
+            0 0 5px rgb(255, 208, 216), 
+            0 0 15px #ff4444, 
+            0 0 2px rgb(255, 208, 216), 
+            0 2px 3px #000;
+    }
+    20%, 21%, 63%, 65%, 69.9% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+span {
+    position: absolute;
+    color: pink;
+    left: 1.6ch;
+    animation: flicker 3s linear infinite;
+    animation-duration: calc(3s + (random() * 2s));
+}
+
+span {
+	position: absolute;
+	color: pink;
+	left: 1.6ch;
+    animation: flicker 3s linear infinite;
+}
+
+#blink-a::hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#blink-a {
+    color: pink;
+    text-decoration: none;
+}
+
+#v{
+    color: pink;
+    z-index: 100;
+}
+
+.nav {
+    color: white;
+}
+
+.nav a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#home {
+    color: white;
+}
