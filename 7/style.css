@@ -1,0 +1,16 @@
+html {
+    overscroll-behavior: none;
+}
+
+body {
+    background-image: url(../media/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Fira Code SemiBold", monospace;
+}
+
+.background {
+    margin: 10px;
+}
